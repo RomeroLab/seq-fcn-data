@@ -1,14 +1,13 @@
 # seq-fcn-data
 Protein sequence-function datasets
 
-This directory contains subdirectories with various protein sequence-function data sets. Each data set has a load_data.py as an example for how the data should be read.
+This contains subdirectories with various protein sequence-function data sets. Each data set has a python script (typically load_data.py) as an example for how the data should be read.
 
 
 
 
 
 ## Phil's upload notes: 
-
 **Done**
 - P450_chimeras
 - CBHI_chimeras
