@@ -7,9 +7,9 @@ This directory contains subdirectories with various protein sequence-function da
 
 
 
-Phil's upload notes: 
+## Phil's upload notes: 
 
-### Done ###
+**Done**
 P450_chimeras
 CBHI_chimeras
 CBHII_chimeras
@@ -21,7 +21,7 @@ arginase_chimeras
 bacteriorhodopsin_active_site
 epoxide_hydrolase_active_site
 
-### To Do ###
+**To Do**
 AAV_chimeras
 Bgl3_random_mutagenesis
 Rocker_double_mutants
