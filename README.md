@@ -1,2 +1,2 @@
 # seq-fcn-data
-Various protein sequence-function
+Protein sequence-function datasets
