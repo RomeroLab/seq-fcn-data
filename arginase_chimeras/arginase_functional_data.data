@@ -1,0 +1,22 @@
+>header
+sequence name, chimera seq, AUC, AUC_Mn, Tm, kcat/Km (+/- error)
+
+>data
+hArgI   , 11111111, 2350, 5326, 81.0, 130/20
+hArgII  , 22222222, 4042,  NaN, 80.6, 114/18
+SCHEMA A, 11112122,  NaN,  NaN,  NaN, NaN       
+SCHEMA B, 12122211, 3664, 2927, 81.2, 19/7
+SCHEMA C, 11221221, 3872, 5838, 68.1, 53/10
+SCHEMA D, 12211212,  NaN,  NaN,  NaN, NaN
+SCHEMA E, 21121212,  NaN,  NaN,  NaN, NaN     # this sequence is borderline.  It originally had a half-life measurement, but didn't have enough expression for other measurments?
+SCHEMA F, 21212211,  NaN,  NaN,  NaN, NaN									   
+SCHEMA G, 22111221,  NaN,  NaN,  NaN, NaN
+SCHEMA H, 22221111, 3089, 4109, 68.5, 31/7
+SCHEMA I, 21122121, 1654,  NaN, 67.5, 27/11
+SCHEMA J, 11222112, 4710, 6188, 70.7, 42/8
+SCHEMA K, 22121121, 1311, 2655, 78.9, 27/10
+SCHEMA L, 21222111, 2828,  NaN, 70.5, 19/7
+SCHEMA M, 12122122, 4005,  NaN, 71.2, 45/11
+SCHEMA N, 12222112, 3901,  NaN, 70.6, 36/5
+SCHEMA O, 11122222, 1026, 3108, 82.5, 138/19
+SCHEMA P, 21121111, 1417,  NaN, 74.3, 39/10

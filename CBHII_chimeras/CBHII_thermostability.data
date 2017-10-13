@@ -1,0 +1,114 @@
+# this is the data from Pete's PNAS paper
+# file contains all the unique chimeras that have been made, their fold (expression) status, T50s, and half lives, grouped according to when and why they were made
+# last updated Feb 4, 2009
+
+>header
+chimera code, fold status, T50, half life at some temperature
+
+>data
+#parents
+11111111, 1, 64.5, 95.0 #  parent 1 (H. insolens)
+22222222, 1, 61.0, 2.0  #  parent 2 (H. jecorino)
+33333333, 1, 63.5, 25.0 #  parent 3 (C. themophilum)
+
+#sample set
+13121211, 0, NaN, NaN
+12122221, 0, NaN, NaN
+33332321, 0, NaN, NaN
+33321331, 0, NaN, NaN
+21322232, 0, NaN, NaN
+21112113, 0, NaN, NaN
+31121121, 0, NaN, NaN
+32312222, 0, NaN, NaN
+23223223, 0, NaN, NaN
+31313323, 0, NaN, NaN
+32121222, 0, NaN, NaN
+12121113, 0, NaN, NaN
+22133222, 0, NaN, NaN
+33222333, 0, NaN, NaN
+11131231, 0, NaN, NaN
+11112321, 0, NaN, NaN
+12111212, 0, NaN, NaN
+31222212, 0, NaN, NaN
+22322312, 0, NaN, NaN
+12222213, 0, NaN, NaN
+12221122, 0, NaN, NaN
+22212323, 0, NaN, NaN
+23222321, 0, NaN, NaN
+32333223, 0, NaN, NaN
+33331213, 0, NaN, NaN
+11332333, 1, 66.5, 50.0
+21131311, 1, 57.0, 3.0
+31212111, 1, 59.0, 2.5
+22232132, 1, 67.75, 300.0
+33213332, 1, 66.75, 140.0
+23233133, 1, 61.25, 2.5
+13231111, 1, 63.0, 50.0
+12213111, 1, 63.0, 40.0
+31311112, 1, 60.25, 15.0
+11113132, 1, 71.5, 3000.0
+13111313, 1, 53.5, 20.0
+21311131, 1, 75.5, 500.0
+11313121, 1, 60.0, 50.0
+21223122, 1, NaN, NaN
+22212231, 1, 62.0, 10.0
+23231222, 1, NaN, NaN
+32333113, 1, 52.5, 1.0
+12133333, 1, 64.0, 90.0
+13333232, 1, 66.75, 115.0
+33123313, 1, NaN, NaN
+21333331, 1, 75.5, 500.0
+23311333, 1, 66.0, 35.0
+33133132, 1, 65.5, 200.0
+
+#exclusively gen2 (24 validation set from paper)
+12122132, 0, NaN, NaN
+12122331, 0, NaN, NaN
+12112132, 0, 70.5, NaN
+13122332, 0, NaN, NaN
+13322332, 0, 71.25, NaN
+22122132, 0, NaN, NaN
+22322132, 0, NaN, NaN
+22311332, 0, NaN, NaN
+23111332, 0, 67.5, NaN # this was the one that was labeled wrong initially (chimera69)
+23321131, 0, NaN, NaN
+23321332, 0, NaN, NaN
+23321331, 0, NaN, NaN
+12111131, 1, 69.25, NaN
+12132331, 1, 67.5, NaN
+12131331, 1, 69.25, NaN
+12332331, 1, 68.0, NaN
+13332331, 1, 70.0, NaN
+13311331, 1, 74.75, NaN
+22311331, 1, 69.0, NaN
+13111132, 0, 70.5, NaN # listed as inactive in paper (gen2) and listed as active in T50 spreadsheet (gen2)
+
+#validation set (gen2) in paper and gen3 in T50 spreadsheet
+13331332, 1, 67.5, NaN #  listed in validation set (gen2) in paper,  and gen3 in T50 spreadsheet,  this is the double that has very different stability measurements
+13311332, 1, 72.5, NaN #  listed in validation set (gen2) in paper,  and gen 3 in T50 spreadsheet,  one of those repeats,  aka chimera76
+12132332, 0, 71.0, NaN # listed as inactive in paper (gen2) then with a stability (T50) in gen3,  aka number 50,  not enough expression initially,  but he bumped it up
+13111332, 0, 73.5, NaN # listed as inactive in paper (gen2) then with a stability (T50) in gen3,  aka number 59,  not enough expression initially,  but he bumped it up
+
+#exclusively in generation 3
+13112332, 1, 73.5, NaN
+12131332, 1, 69.75, NaN
+13131332, 1, 70.5, NaN
+11111132, 1, 72.0, NaN
+12113132, 1, 71.5, NaN
+12112332, 1, 68.75, NaN
+11113332, 1, 70.0, NaN
+12332332, 1, 66.75, NaN
+13132332, 1, 71.25, NaN
+12312332, 1, 66.0, NaN
+13312332, 1, 70.0, NaN
+13113132, 1, 71.5, NaN
+12331332, 1, 71.25, NaN
+12311332, 1, 70.5, NaN
+12111332, 1, 71.5, NaN
+13332332, 1, 70.5, NaN
+11112132, 1, 70.75, NaN
+
+#additional chimeras
+12222332, 1, 71.5, NaN #  HJPlus
+12222132, 1, 71.5, NaN #  Chimera1D,  some random chimera Pete made
+22222232, 1, 65.5, NaN #  Chimera2D,  some random chimera Pete made
