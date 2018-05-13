@@ -13,35 +13,14 @@ WT_Bgl3 = 'MVPAAQQTAMAPDAALTFPEGFLWGSATASYQIEGAAAEDGRTPSIWDTYARTPGRVRNGDTGDVATDH
 
 files = ['unlabeled_Bgl3_mutations.txt','positive_Bgl3_mutations.txt','positive_Bgl3_mutations_hitemp.txt']
 
-include_WT = False # don't include WT sequences in the output 
+for f in files:
+    outfile = open(f.replace('mutations','sequences'),'w')
+    variants = [m.split(',') for m in open(f).read().strip().split('\n')]
 
-
-if include_WT: # include WT sequences 
-    for f in files:
-        outfile = open(f.replace('mutations','sequences'),'w')
-        variants = [m.split(',') for m in open(f).read().strip().split('\n')]
-
-        for mut in variants:
-            if mut[0]=='WT':
-                outfile.write(WT_Bgl3+'\n')        
-            else:
-                mutant_seq = WT_Bgl3
-                for m in mut:
-                    pos = int(m[1:-1])
-                    AA = m[-1]
-                    mutant_seq = mutant_seq[:pos]+AA+mutant_seq[pos+1:]
-                outfile.write(mutant_seq+'\n')        
-
-else: # don't include WT sequences
-    for f in files:
-        outfile = open(f.replace('mutations','sequences'),'w')
-        variants = [m.split(',') for m in open(f).read().strip().split('\n')]
-
-        for mut in variants:
-            if mut[0]!='WT':
-                mutant_seq = WT_Bgl3
-                for m in mut:
-                    pos = int(m[1:-1])
-                    AA = m[-1]
-                    mutant_seq = mutant_seq[:pos]+AA+mutant_seq[pos+1:]
-                outfile.write(mutant_seq+'\n')        
+    for mut in variants:
+        mutant_seq = WT_Bgl3
+        for m in mut:
+            pos = int(m[1:-1])
+            AA = m[-1]
+            mutant_seq = mutant_seq[:pos]+AA+mutant_seq[pos+1:]
+        outfile.write(mutant_seq+'\n')
